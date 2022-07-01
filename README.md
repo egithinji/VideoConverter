@@ -16,7 +16,7 @@ Small bash script for converting a bunch of video files from one format to anoth
 ## Note
 Currently it only recurses one level of directories i.e.
 
-'''
+```
 /MyDirectory
            |
            converter.sh //Put the script here
@@ -34,7 +34,7 @@ Currently it only recurses one level of directories i.e.
                ...
            /Converted
                //converted files will be put here
-'''
+```
 
 # Todo
 - [ ] Add argument for specifying directory to run in
