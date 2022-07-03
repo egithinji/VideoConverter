@@ -41,3 +41,4 @@ Currently it only recurses one level of directories i.e.
 - [ ] Error message if non-supported video formats entered
 - [ ] Percentage complete should be on same line
 - [ ] Add multiple recursion
+- [ ] Add fast/slow argument for selecting between copying (fast) or re-encoding (slow) options in ffmpeg
