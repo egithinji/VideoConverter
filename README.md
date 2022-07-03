@@ -37,8 +37,8 @@ Currently it only recurses one level of directories i.e.
 ```
 
 # Todo
-- [ ] Add argument for specifying directory to run in
+- [ ] Add fast/slow argument for selecting between copying (fast) or re-encoding (slow) options in ffmpeg
+- [x] Add argument for specifying directory to run in
 - [ ] Error message if non-supported video formats entered
 - [ ] Percentage complete should be on same line
 - [ ] Add multiple recursion
-- [ ] Add fast/slow argument for selecting between copying (fast) or re-encoding (slow) options in ffmpeg
