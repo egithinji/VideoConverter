@@ -9,7 +9,7 @@ function convert_videos {
         if [ $extension = "$1" ]; then
             original=$file
             converted="${filename}.$2"
-            ffmpeg -i "$original" -c:v copy -c:a copy -y "$converted" 2>> /dev/null 
+            ffmpeg -i "$original" "$converted" 2>> /dev/null 
             mv "$converted" ../Converted/
             let completed++
             echo $((100*$completed/$target))% complete
