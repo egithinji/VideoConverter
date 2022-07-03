@@ -17,14 +17,22 @@ function convert_videos {
     done;
 }
 
+if [ $# -eq 3]; then
+   pushd "$3"
+fi
+
 echo "Total files to convert: $target"
 mkdir Converted
 for d in */; do
-    cd "$d"
+    pushd "$d"
     echo "converting files in $d"
     convert_videos "$@"
-    cd ..
+    popd
     echo "Files converted: $( find -name *.$2 | wc -l )"
 done;
+
+if [ $# -eq 3]; then
+  popd
+fi
 
 echo "Done. Total files converted: $( find -name *.$2 | wc -l )"
